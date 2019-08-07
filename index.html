@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="vegan">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/preloader.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Bootstrap minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Bootstrap minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Bootstrap font-awesome CSS -->
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+<!-- Angular minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+<script src="js/angular-route.min.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="pages/vegetables/js/vegetablesCtrl.js"></script>
+<script src="pages/vegetables/vegs/js/vegsCtrl.js"></script>
+
+<script src="pages/fruits/js/fruitsCtrl.js"></script>
+<script src="pages/fruits/frts/js/frutsCtrl.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+
+
+ <header>
+   <div ng-include="'pages/header.html'"></div> 
+  </header>
+
+<section> 
+   <div class="container position view-animate-container">
+        <div ng-view autoscroll="true"></div>
+    </div><!-- .container -->
+</section>
+
+ <footer class="footer-distributed">
+        <div ng-include="'pages/footer.html'"></div>
+</footer>
+
+
+</body>
+</html>

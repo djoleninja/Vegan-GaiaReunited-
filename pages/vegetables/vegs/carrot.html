@@ -1,0 +1,60 @@
+
+
+<div ng-repeat="x in carrot" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in carrot" class="row">
+     <div class="col-md-4" ><img src="assets/image/vegetables/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+The wild ancestors of the carrot are likely to have originated from Persia (regions of which are now Iran and Afghanistan), which remain the centre of diversity of Daucus carota, the wild carrot. A naturally occurring subspecies of the wild carrot, Daucus carota, has been selectively bred over the centuries to reduce bitterness, increase sweetness and minimise the woody core. This procces has produced the familiar garden vegetable that we enjoy today. Europeans called it edible root. Various languages still use the same word for "carrot" as they do for "root".
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">75%</span>, most dominant are vitamin A <span class="vtm">51%</span> and K <span class="vtm">11%</span> </p>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+

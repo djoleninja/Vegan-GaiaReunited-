@@ -1,0 +1,58 @@
+
+
+<div ng-repeat="x in broccoli" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in broccoli" class="row">
+     <div class="col-md-4" ><img src="assets/image/vegetables/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+Broccoli was certainly an Italian vegetable, as its name suggests, long before it was eaten elsewhere. Its first mention in France is in  sixteenth century, but in eighteen century broccoli was still so unfamiliar in England that Philip Miller's Gardener's Dictionary (1724 edition)referred to it as a strange plant. During the sixteenth century, Broccoli was grown in Italy and France, but was not grown commercially anywhere else until the early 1900s. The word, broccoli, is derived from the Italian, brocco, meaning arm or branch.
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">83%</span>, most dominant are vitamin C <span class="vtm">24%</span> and K <span class="vtm">53%</span> </p>
+		</div>
+	</div>
+</div>
+
+</div>
+

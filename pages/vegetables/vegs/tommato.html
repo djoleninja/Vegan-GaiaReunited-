@@ -1,0 +1,56 @@
+<div ng-repeat="x in tommato" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in tommato" class="row">
+     <div class="col-md-4" ><img src="assets/image/vegetables/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+Aztecs and other peoples in Mesoamerica used the fruit in their cooking. They called it "fat water". The exact date of domestication is unknown. By 500 BC, it was already being cultivated in southern Mexico and probably other areas. The Pueblo people are thought to have believed that those who witnessed the ingestion of tomato seeds were blessed with powers of divination. The large, lumpy variety of tomato, a mutation from a smoother, smaller fruit, originated in Mesoamerica, and may be the direct ancestor of some modern cultivated tomatoes.  
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">77%</span>, most dominant are vitamin A <span class="vtm">28%</span> and C <span class="vtm">21.5%</span> </p>
+		</div>
+	</div>
+</div>
+
+</div>
+

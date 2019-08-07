@@ -1,0 +1,59 @@
+
+
+<div ng-repeat="x in pear" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in pear" class="row">
+     <div class="col-md-4" ><img src="assets/image/fruits/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+The pear is a fresh fruit whose origins are dated back to Stone age. The very old origins of pears can be traced in the South-Eastern European and in the Western Asia. For this reason we can say that the pear is a typically Mediterranean fruit. Probably, men ate the fruits of the pear tree already 4000 years ago: anyway, more than 350 years b.C. the cultivation and the production of the pear was quite widespread in the Magna Graecia; Theophrastus, ancient Greek author, mentioned both the wild varieties of pears and the varieties cultivated by men.
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">82%</span>, most dominant are vitamin A <span class="vtm">64%</span> and C <span class="vtm">11%</span> </p>
+		</div>
+	</div>
+</div>
+
+</div>
+
+	

@@ -1,0 +1,59 @@
+
+
+<div ng-repeat="x in apricots" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in apricots" class="row">
+     <div class="col-md-4" ><img src="assets/image/fruits/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+Apricots originated on the Russian-Chinese border in about 3000 BC and were imported along with peach seed into Europe through the “Silk Road” that extended camelback trading to the Mideast. The fruit grows as an escaped naturalized plant along modern roadsides in Turkey and Armenia today in abundant numbers. Apricots were known in ancient Greece in 60 BC and later introduced into the Roman Empire. The apricot trees are believed to have arrived in the early American colonies in seed form for growing into fruit trees by the French explorers of the 1700’s in Gulf regions and in the Eastern United States and at California monasteries by Spanish explorers and missionaries.
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">82%</span>, most dominant are vitamin A <span class="vtm">64%</span> and C <span class="vtm">11%</span> </p>
+		</div>
+	</div>
+</div>
+
+</div>
+
+	

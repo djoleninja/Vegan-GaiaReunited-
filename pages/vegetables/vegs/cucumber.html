@@ -1,0 +1,56 @@
+
+<div ng-repeat="x in cucumber" class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> {{x.name}} </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+
+<div ng-repeat="x in cucumber" class="row">
+     <div class="col-md-4" ><img src="assets/image/vegetables/{{x.name}}.png" alt="bro"> </div>
+ 	<div class="col-md-5" >
+ 		<p class="ntrinfo"> 
+The cucumber was first appeared in India 5000 BC. Since that moment over 4000 years ago ( 2000 BC ), cucumber was spread beyond Indian borders, moved through Ancient Greece, Rome, Europe, America and China. This journey was filed with golden periods when they were viewed as integral parts of many culture’s cuisines, and sometimes they were treated as bringers of disease. Roman Empire was the place where cucumbers were truly embraced by both nobility and lower classes. The ease of production and wide variety of types and tastes ensured that cucumbers remained popular in Italy for several centuries. In addition to eating, cucumbers were also widely used as a source of several medicinal remedies. The word "cucumber" comes from the Latin name "cucumis".
+</p> </div> 
+      <div class="col-md-3" >
+      	<div class="ntrsn">
+    	 <h3>Nutrition value <span class="grms">per 100 g / procents</span> </h3>
+      		<table class="table table-bordered ">
+				  <tr>
+				    <td>Energy</td>
+				    <td>{{x.Energy}}</td> 
+				    <td>{{x.EngPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Carbohydrates</td>
+				    <td>{{x.Carbohydrates}}</td>
+					 <td>{{x.CrbHydrtPrcnt}}</td> 
+				  </tr>
+				  <tr>
+				    <td>Protein</td>
+				    <td>{{x.Protein}}</td>
+				    <td>{{x.PrtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Total Fat</td>
+				    <td>{{x.TotalFat}}</td>
+				    <td>{{x.TtlFtPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Cholesterol</td>
+				    <td>{{x.Cholesterol}}</td>
+				    <td>{{x.chlstrlPrcnt}}</td>  
+				  </tr>
+				  <tr>
+				    <td>Dietary Fiber</td>
+				    <td>{{x.DietaryFiber}}</td>
+				    <td>{{x.dietryFbrPrcnt}}</td>  
+				  </tr>
+		</table>
+		<div class="ntrttxt">
+		<p> Vitamins up to <span class="vtm">22%</span>, most dominant is vitamin K <span class="vtm">13.6%</span></p>
+		</div>
+	</div>
+</div>
+
+</div>
